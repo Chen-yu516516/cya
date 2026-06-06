@@ -70,3 +70,52 @@
 | extract_status | 提取状态 |
 | review_status | 审阅状态 |
 | notes | 备注 |
+
+---
+
+## Week 1 公共样本最小闭环提交
+
+> 提交时间: 2026-06-07 | 状态: ✅ 完成
+
+### 总体概况
+
+| 指标 | 数值 |
+|------|------|
+| 总样本数 | 8 |
+| 成功处理 | 8 |
+| 结构化JSON输出 | 8 |
+| 总页数 | 2,972 |
+| 候选文本段数 | 290 |
+
+### 各公司处理结果
+
+| 公司 | 板块 | 页数 | 候选文本 | JSON |
+|------|------|------|----------|------|
+| [大鹏工业](week1/BSE001_大鹏工业_structured.json) | 北交所 | 391 | 27 | ✅ |
+| [太湖远大](week1/BSE002_太湖远大_structured.json) | 北交所 | 336 | 52 | ✅ |
+| [佰维存储](week1/STAR001_佰维存储_structured.json) | 科创板 | 467 | 67 | ✅ |
+| [百利天恒](week1/STAR002_百利天恒_structured.json) | 科创板 | 556 | 22 | ✅ |
+| [富乐德](week1/GEM001_富乐德_structured.json) | 创业板 | 494 | 53 | ✅ |
+| [维峰电子](week1/GEM002_维峰电子_structured.json) | 创业板 | 331 | 28 | ✅ |
+| [信达证券](week1/MAIN001_信达证券_structured.json) | 沪主板 | 158 | 32 | ✅ |
+| [慕思股份](week1/MAIN002_慕思股份_structured.json) | 深主板 | 239 | 9 | ✅ |
+
+### 产出物
+
+| 文件 | 说明 |
+|------|------|
+| [week1_company_list.csv](week1/week1_company_list.csv) | 公共样本清单 |
+| [week1_all_outputs.json](week1/week1_all_outputs.json) | 全部结构化JSON汇总 |
+| [week1_candidate_texts.json](week1/week1_candidate_texts.json) | 候选文本汇总 |
+| [week1_report.md](week1/week1_report.md) | 完整处理报告 |
+| [download_log.csv](week1/download_log.csv) | 下载日志 |
+| [parse_log.md](week1/parse_log.md) | 解析日志 |
+| [locate_log.md](week1/locate_log.md) | 定位日志 |
+| [extraction_log.md](week1/extraction_log.md) | 提取日志 |
+| [validation_log.md](week1/validation_log.md) | 校验日志 |
+
+### 代码脚本
+
+| 文件 | 说明 |
+|------|------|
+| [week1_pipeline.py](week1/week1_pipeline.py) | Week 1 完整处理脚本 (PDF→Markdown→定位→JSON) |
