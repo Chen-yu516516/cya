@@ -1,0 +1,14 @@
+## download_log.csv
+
+生成时间: 2026-06-07T00:29:58.084167
+
+| 时间 | sample_id | 状态 | 详情 |
+|------|-----------|------|------|
+| 2026-06-07T00:29:53 | BSE001 | success | PDF已确认: /Users/chenyuang/Desktop/马威斯抓取巨潮网结果/2025/920091_大鹏工业_2025-11-03.pdf |
+| 2026-06-07T00:29:54 | BSE002 | success | PDF已确认: /Users/chenyuang/Desktop/马威斯抓取巨潮网结果/2024/920118_太湖远大_2024-08-09.pdf |
+| 2026-06-07T00:29:54 | STAR001 | success | PDF已确认: /Users/chenyuang/Desktop/Claude code 抓取结果/佰维存储_688525_2022-12-27_佰维存储首次公开发行股票并在科创板上市招股说明书.pd |
+| 2026-06-07T00:29:55 | STAR002 | success | PDF已确认: /Users/chenyuang/Desktop/Claude code 抓取结果/百利天恒_688506_2022-12-30_百利天恒首次公开发行股票并在科创板上市招股说明书.pd |
+| 2026-06-07T00:29:56 | GEM001 | success | PDF已确认: /Users/chenyuang/Desktop/Claude code 抓取结果/富乐德_301297_2022-12-27_首次公开发行股票并在创业板上市招股说明书.pdf |
+| 2026-06-07T00:29:56 | GEM002 | success | PDF已确认: /Users/chenyuang/Desktop/马威斯抓取巨潮网结果/2022/301328_维峰电子_2022-09-01.pdf |
+| 2026-06-07T00:29:57 | MAIN001 | success | PDF已确认: /Users/chenyuang/Desktop/Claude code 抓取结果/信达证券_601059_2022-12-23_信达证券首次公开发行股票招股说明书摘要.pdf |
+| 2026-06-07T00:29:57 | MAIN002 | success | PDF已确认: /Users/chenyuang/Desktop/马威斯抓取巨潮网结果/2022/001323_慕思股份_2022-06-13.pdf |
