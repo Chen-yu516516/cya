@@ -1,0 +1,9 @@
+﻿sample_id,company_name,stock_code,board,download_status,parse_status,locate_status,extract_status,page_count,candidate_count
+BSE001,大鹏工业,920091,北交所,success,success,success,success,391,27
+BSE002,太湖远大,920118,北交所,success,success,success,success,336,52
+STAR001,佰维存储,688525,科创板,success,success,success,success,467,67
+STAR002,百利天恒,688506,科创板,success,success,success,success,556,22
+GEM001,富乐德,301297,创业板,success,success,success,success,494,53
+GEM002,维峰电子,301328,创业板,success,success,success,success,331,28
+MAIN001,信达证券,601059,沪主板,success,success,success,success,158,32
+MAIN002,慕思股份,001323,深主板,success,success,success,success,239,9
