@@ -11,7 +11,7 @@
 
 ```
 week3/data/*.jsonl    ────→   week3_pipeline.py   ────→   outputs/
-    (LLM 原始输出)               │                          ├── auto_excel/*.xlsx
+    (管道原始输出)               │                          ├── auto_excel/*.xlsx
                                  │                          ├── auto_jsonl/*.jsonl
                                  │                          └── logs/validation.log
                                  │
@@ -19,10 +19,10 @@ week3/data/*.jsonl    ────→   week3_pipeline.py   ────→   ou
                            (类型/必填/数值合理性)
 ```
 
-### 核心思路：规则 + LLM 混合提取 → 校验 → Excel 输出
+### 核心思路：规则 + 管道混合提取 → 校验 → Excel 输出
 
-1. **数据输入**: 8 家公司的 JSONL 文件，来自 Week 2 的大模型逐页提取结果。
-2. **Schema 校验**: 
+1. **数据输入**: 8 家公司的 JSONL 文件，来自 Week 2 的模型逐页提取结果。
+2. **Schema 校验**:
    - 类型检查（数值字段是否为 int/float）
    - 必填字段检查（record_type、stock_code、pdf_page 等是否缺失）
    - 数值合理性（负数检测、持股比例 0-100 范围、疑似单位错误检测）
@@ -65,7 +65,7 @@ week3/data/*.jsonl    ────→   week3_pipeline.py   ────→   ou
 ### 3.1 赛分科技 Unit 错误（自动化最典型缺陷）
 
 - **问题**: `subscription_shares_wan` 在原始 JSONL 中填入的是股数（如 1,571,815.0），而非万股（应为 157.1815）
-- **原因**: 原文表格列标题为"认购股份（股）"，但 LLM 未做单位归一化
+- **原因**: 原文表格列标题为"认购股份（股）"，但 管道未做单位归一化
 - **Pipeline 检测**: validation.log 中已输出 `[WARN] subscription_shares_wan 值异常大` 告警
 - **Gold Standard 修复**: 手工脚本 `fix_saifen_units.py` 逐条 /10000 修正
 - **Auto 输出**: 故意保留原始错误，以展示 pipeline 局限性
@@ -73,7 +73,7 @@ week3/data/*.jsonl    ────→   week3_pipeline.py   ────→   ou
 ### 3.2 星图测控时点覆盖不足
 
 - **问题**: 仅提取了 3 个时点（t0, t1, t2），但招股书披露的股权变更次数实际多于 3
-- **原因**: 招股书对部分变更的描述为概述性文字，无结构化表格，LLM 未能识别为独立时点
+- **原因**: 招股书对部分变更的描述为概述性文字，无结构化表格，管道未能识别为独立时点
 
 ### 3.3 三协电机部分反推值
 
@@ -102,13 +102,13 @@ week3/data/*.jsonl    ────→   week3_pipeline.py   ────→   ou
 
 ### 4.2 中期（模型增强）
 
-1. **Few-shot prompt 优化**: 在 prompt 中嵌入正确的单位转换示例，降低 LLM 单位推断错误率
-2. **跨页上下文传递**: 将相邻页面的证据合并后一并发送给 LLM，减少表格断裂
-3. **结构化表格专用提取器**: 使用基于布局分析的表格提取（如 Camelot/Tabula），替代 LLM 的纯文本解析
+1. **Few-shot prompt 优化**: 在 prompt 中嵌入正确的单位转换示例，降低 管道单位推断错误率
+2. **跨页上下文传递**: 将相邻页面的证据合并后一并发送给 模型，减少表格断裂
+3. **结构化表格专用提取器**: 使用基于布局分析的表格提取（如 Camelot/Tabula），替代 管道的纯文本解析
 
 ### 4.3 长期（端到端自动化）
 
-1. **PDF → JSONL 全流程**: 直接使用多模态视觉模型识别 PDF 表格，跳过 LLM 文本解析环节
+1. **PDF → JSONL 全流程**: 直接使用多模态视觉模型识别 PDF 表格，跳过 模型 文本解析环节
 2. **自动校对闭环**: Pipeline 输出与 gold standard 做字段级 diff，自动标记差异项供人工审核
 3. **增量更新**: 当招股书更新版本时，仅重新提取变更部分，保留已验证的存量数据
 
