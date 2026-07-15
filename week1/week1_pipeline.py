@@ -66,7 +66,7 @@ COMPANY_LIST = [
         "prospectus_url": "",
         "prospectus_version": "注册稿",
         "prospectus_date": "2022-12-27",
-        "prospectus_path": "/Users/chenyuang/Desktop/Claude code 抓取结果/佰维存储_688525_2022-12-27_佰维存储首次公开发行股票并在科创板上市招股说明书.pdf",
+        "prospectus_path": "/Users/chenyuang/Desktop/抓取结果/佰维存储_688525_2022-12-27_佰维存储首次公开发行股票并在科创板上市招股说明书.pdf",
     },
     {
         "sample_id": "STAR002",
@@ -82,7 +82,7 @@ COMPANY_LIST = [
         "prospectus_url": "",
         "prospectus_version": "注册稿",
         "prospectus_date": "2022-12-30",
-        "prospectus_path": "/Users/chenyuang/Desktop/Claude code 抓取结果/百利天恒_688506_2022-12-30_百利天恒首次公开发行股票并在科创板上市招股说明书.pdf",
+        "prospectus_path": "/Users/chenyuang/Desktop/抓取结果/百利天恒_688506_2022-12-30_百利天恒首次公开发行股票并在科创板上市招股说明书.pdf",
     },
     {
         "sample_id": "GEM001",
@@ -98,7 +98,7 @@ COMPANY_LIST = [
         "prospectus_url": "",
         "prospectus_version": "注册稿",
         "prospectus_date": "2022-12-27",
-        "prospectus_path": "/Users/chenyuang/Desktop/Claude code 抓取结果/富乐德_301297_2022-12-27_首次公开发行股票并在创业板上市招股说明书.pdf",
+        "prospectus_path": "/Users/chenyuang/Desktop/抓取结果/富乐德_301297_2022-12-27_首次公开发行股票并在创业板上市招股说明书.pdf",
     },
     {
         "sample_id": "GEM002",
@@ -130,7 +130,7 @@ COMPANY_LIST = [
         "prospectus_url": "",
         "prospectus_version": "申报稿",
         "prospectus_date": "2022-12-23",
-        "prospectus_path": "/Users/chenyuang/Desktop/Claude code 抓取结果/信达证券_601059_2022-12-23_信达证券首次公开发行股票招股说明书摘要.pdf",
+        "prospectus_path": "/Users/chenyuang/Desktop/抓取结果/信达证券_601059_2022-12-23_信达证券首次公开发行股票招股说明书摘要.pdf",
     },
     {
         "sample_id": "MAIN002",

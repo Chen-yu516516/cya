@@ -1,16 +1,16 @@
-# Week 3 Pipeline — 自动化提取管线
+# Week 3 处理管道 — 自动化提取管线
 
 > 构建者: 陈雨昂 (cya)
 > 日期: 2026-06-18
 
 ---
 
-## 一、Pipeline 设计思路
+## 一、处理管道 设计思路
 
 ### 总体架构
 
 ```
-week3/data/*.jsonl    ────→   week3_pipeline.py   ────→   outputs/
+week3/data/*.jsonl    ────→   week3_处理管道.py   ────→   outputs/
     (管道原始输出)               │                          ├── auto_excel/*.xlsx
                                  │                          ├── auto_jsonl/*.jsonl
                                  │                          └── logs/validation.log
@@ -21,7 +21,7 @@ week3/data/*.jsonl    ────→   week3_pipeline.py   ────→   ou
 
 ### 核心思路：规则 + 管道混合提取 → 校验 → Excel 输出
 
-1. **数据输入**: 8 家公司的 JSONL 文件，来自 Week 2 的模型逐页提取结果。
+1. **数据输入**: 8 家公司的 JSONL 文件，来自 Week 2 的提取模块逐页提取结果。
 2. **Schema 校验**:
    - 类型检查（数值字段是否为 int/float）
    - 必填字段检查（record_type、stock_code、pdf_page 等是否缺失）
@@ -66,9 +66,9 @@ week3/data/*.jsonl    ────→   week3_pipeline.py   ────→   ou
 
 - **问题**: `subscription_shares_wan` 在原始 JSONL 中填入的是股数（如 1,571,815.0），而非万股（应为 157.1815）
 - **原因**: 原文表格列标题为"认购股份（股）"，但 管道未做单位归一化
-- **Pipeline 检测**: validation.log 中已输出 `[WARN] subscription_shares_wan 值异常大` 告警
+- **处理管道 检测**: validation.log 中已输出 `[WARN] subscription_shares_wan 值异常大` 告警
 - **Gold Standard 修复**: 手工脚本 `fix_saifen_units.py` 逐条 /10000 修正
-- **Auto 输出**: 故意保留原始错误，以展示 pipeline 局限性
+- **Auto 输出**: 故意保留原始错误，以展示 处理管道局限性
 
 ### 3.2 星图测控时点覆盖不足
 
@@ -100,16 +100,16 @@ week3/data/*.jsonl    ────→   week3_pipeline.py   ────→   ou
 2. **异常值自动告警 + 自动修复**: 当 `subscription_shares_wan > 100000` 时，自动 /10000 并标注"auto-fixed"
 3. **时点排序自动编号**: 按 `subscription_date` / `time_point` 中的日期自动排序并重新分配 t0/t1/...
 
-### 4.2 中期（模型增强）
+### 4.2 中期（提取模块增强）
 
-1. **Few-shot prompt 优化**: 在 prompt 中嵌入正确的单位转换示例，降低 管道单位推断错误率
-2. **跨页上下文传递**: 将相邻页面的证据合并后一并发送给 模型，减少表格断裂
+1. **Few-shot 指令 优化**: 在 指令 中嵌入正确的单位转换示例，降低 管道单位推断错误率
+2. **跨页上下文传递**: 将相邻页面的证据合并后一并发送给 提取模块，减少表格断裂
 3. **结构化表格专用提取器**: 使用基于布局分析的表格提取（如 Camelot/Tabula），替代 管道的纯文本解析
 
 ### 4.3 长期（端到端自动化）
 
-1. **PDF → JSONL 全流程**: 直接使用多模态视觉模型识别 PDF 表格，跳过 模型 文本解析环节
-2. **自动校对闭环**: Pipeline 输出与 gold standard 做字段级 diff，自动标记差异项供人工审核
+1. **PDF → JSONL 全流程**: 直接使用多模态视觉提取模块识别 PDF 表格，跳过 提取模块 文本解析环节
+2. **自动校对闭环**: 处理管道 输出与 gold standard 做字段级 diff，自动标记差异项供人工审核
 3. **增量更新**: 当招股书更新版本时，仅重新提取变更部分，保留已验证的存量数据
 
 ---
@@ -117,12 +117,12 @@ week3/data/*.jsonl    ────→   week3_pipeline.py   ────→   ou
 ## 五、产出物清单
 
 ```
-week3/pipeline/
-├── week3_pipeline.py          # 主脚本（可独立运行）
+week3/处理管道/
+├── week3_处理管道.py          # 主脚本（可独立运行）
 └── README.md                  # 本文件
 
-week3/prompts/
-└── extraction_prompt.md       # Week 2 实际使用的提取 Prompt 文档
+week3/指令s/
+└── extraction_指令.md       # Week 2 实际使用的提取 指令 文档
 
 week3/outputs/
 ├── auto_excel/
@@ -143,7 +143,7 @@ week3/outputs/
 │   ├── 688775_影石创新_auto.jsonl
 │   ├── 920100_三协电机_auto.jsonl
 │   └── 920116_星图测控_auto.jsonl
-├── raw_llm_outputs/
+├── raw_extraction_outputs/
 │   ├── 001282_raw.jsonl
 │   ├── 301563_raw.jsonl
 │   ├── 301581_raw.jsonl

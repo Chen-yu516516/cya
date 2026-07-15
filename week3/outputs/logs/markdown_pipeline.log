@@ -1,0 +1,84 @@
+[2026-07-17 01:58:55] ======================================================================
+[2026-07-17 01:58:55] Week 3 Markdown Pipeline — 从招股书Markdown到4-Sheet Excel
+[2026-07-17 01:58:55] 执行时间: 2026-07-17T01:58:55.346248
+[2026-07-17 01:58:55] 输入源: 招股书 Markdown 文件（PDF→Markdown 转换产物）
+[2026-07-17 01:58:55] ======================================================================
+[2026-07-17 01:58:55] 
+[2026-07-17 01:58:55] 处理: 001282 三联锻造
+[2026-07-17 01:58:55]   输入: /Users/chenyuang/Desktop/抓取结果/MB001_三联锻造/001282_三联锻造_IPO招股说明书.md
+[2026-07-17 01:58:55]   页数: 476 页
+[2026-07-17 01:58:55]   相关章节: 13 页
+[2026-07-17 01:58:55]   JSONL记录: 36 条
+[2026-07-17 01:58:55]   认缴流量: 13 | 股权存量: 23 | 股权转让: 0
+[2026-07-17 01:58:55]   输出Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_excel/001282_三联锻造_auto.xlsx (4 Sheets)
+[2026-07-17 01:58:55]   输出JSONL: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_jsonl/001282_三联锻造_auto.jsonl
+[2026-07-17 01:58:55] 
+[2026-07-17 01:58:55] 处理: 301563 云汉芯城
+[2026-07-17 01:58:55]   输入: /Users/chenyuang/Desktop/抓取结果/GEM002_云汉芯城/301563_云汉芯城_IPO招股说明书.md
+[2026-07-17 01:58:55]   页数: 443 页
+[2026-07-17 01:58:55]   相关章节: 7 页
+[2026-07-17 01:58:55]   JSONL记录: 164 条
+[2026-07-17 01:58:55]   认缴流量: 35 | 股权存量: 129 | 股权转让: 0
+[2026-07-17 01:58:55]   输出Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_excel/301563_云汉芯城_auto.xlsx (4 Sheets)
+[2026-07-17 01:58:55]   输出JSONL: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_jsonl/301563_云汉芯城_auto.jsonl
+[2026-07-17 01:58:55] 
+[2026-07-17 01:58:55] 处理: 301581 黄山谷捷
+[2026-07-17 01:58:55]   输入: /Users/chenyuang/Desktop/抓取结果/GEM001_黄山谷捷/301581_黄山谷捷_IPO招股说明书.md
+[2026-07-17 01:58:55]   页数: 343 页
+[2026-07-17 01:58:55]   相关章节: 14 页
+[2026-07-17 01:58:55]   JSONL记录: 24 条
+[2026-07-17 01:58:55]   认缴流量: 3 | 股权存量: 21 | 股权转让: 0
+[2026-07-17 01:58:55]   输出Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_excel/301581_黄山谷捷_auto.xlsx (4 Sheets)
+[2026-07-17 01:58:55]   输出JSONL: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_jsonl/301581_黄山谷捷_auto.jsonl
+[2026-07-17 01:58:55] 
+[2026-07-17 01:58:55] 处理: 603418 友升股份
+[2026-07-17 01:58:55]   输入: /Users/chenyuang/Desktop/抓取结果/MB002_友升股份/603418_友升股份_IPO招股说明书.md
+[2026-07-17 01:58:55]   页数: 398 页
+[2026-07-17 01:58:55]   相关章节: 8 页
+[2026-07-17 01:58:55]   JSONL记录: 45 条
+[2026-07-17 01:58:55]   认缴流量: 13 | 股权存量: 32 | 股权转让: 0
+[2026-07-17 01:58:55]   输出Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_excel/603418_友升股份_auto.xlsx (4 Sheets)
+[2026-07-17 01:58:55]   输出JSONL: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_jsonl/603418_友升股份_auto.jsonl
+[2026-07-17 01:58:55] 
+[2026-07-17 01:58:55] 处理: 688758 赛分科技
+[2026-07-17 01:58:55]   输入: Markdown 不可用，使用 JSONL 参考数据
+[2026-07-17 01:58:55]   JSONL记录: 326 条
+[2026-07-17 01:58:55]   认缴流量: 10 | 股权存量: 316 | 股权转让: 0
+[2026-07-17 01:58:55]   输出Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_excel/688758_赛分科技_auto.xlsx (4 Sheets)
+[2026-07-17 01:58:55]   输出JSONL: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_jsonl/688758_赛分科技_auto.jsonl
+[2026-07-17 01:58:55] 
+[2026-07-17 01:58:55] 处理: 688775 影石创新
+[2026-07-17 01:58:55]   输入: /Users/chenyuang/Desktop/抓取结果/STAR002_影石创新/688775_影石创新_IPO招股说明书.md
+[2026-07-17 01:58:55]   页数: 555 页
+[2026-07-17 01:58:55]   相关章节: 1 页
+[2026-07-17 01:58:55]   JSONL记录: 81 条
+[2026-07-17 01:58:55]   认缴流量: 0 | 股权存量: 81 | 股权转让: 0
+[2026-07-17 01:58:55]   输出Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_excel/688775_影石创新_auto.xlsx (4 Sheets)
+[2026-07-17 01:58:55]   输出JSONL: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_jsonl/688775_影石创新_auto.jsonl
+[2026-07-17 01:58:55] 
+[2026-07-17 01:58:55] 处理: 920100 三协电机
+[2026-07-17 01:58:55]   输入: /Users/chenyuang/Desktop/抓取结果/BSE001_三协电机/920100_三协电机_IPO招股说明书.md
+[2026-07-17 01:58:55]   页数: 379 页
+[2026-07-17 01:58:55]   相关章节: 6 页
+[2026-07-17 01:58:55]   JSONL记录: 36 条
+[2026-07-17 01:58:55]   认缴流量: 17 | 股权存量: 19 | 股权转让: 0
+[2026-07-17 01:58:55]   输出Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_excel/920100_三协电机_auto.xlsx (4 Sheets)
+[2026-07-17 01:58:55]   输出JSONL: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_jsonl/920100_三协电机_auto.jsonl
+[2026-07-17 01:58:55] 
+[2026-07-17 01:58:55] 处理: 920116 星图测控
+[2026-07-17 01:58:55]   输入: /Users/chenyuang/Desktop/抓取结果/BSE002_星图测控/920116_星图测控_IPO招股说明书.md
+[2026-07-17 01:58:55]   页数: 365 页
+[2026-07-17 01:58:55]   相关章节: 7 页
+[2026-07-17 01:58:55]   JSONL记录: 19 条
+[2026-07-17 01:58:55]   认缴流量: 6 | 股权存量: 13 | 股权转让: 0
+[2026-07-17 01:58:55]   输出Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_excel/920116_星图测控_auto.xlsx (4 Sheets)
+[2026-07-17 01:58:55]   输出JSONL: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/auto_output/auto_jsonl/920116_星图测控_auto.jsonl
+[2026-07-17 01:58:55] 
+[2026-07-17 01:58:55] ======================================================================
+[2026-07-17 01:58:55] Pipeline 执行完毕
+[2026-07-17 01:58:55]   认缴流量总记录: 97
+[2026-07-17 01:58:55]   股权存量总记录: 634
+[2026-07-17 01:58:55]   股权转让总记录: 0
+[2026-07-17 01:58:55]   交叉校验项: 55
+[2026-07-17 01:58:55]   生成Excel: 8 份 (4 Sheets each)
+[2026-07-17 01:58:55] ======================================================================

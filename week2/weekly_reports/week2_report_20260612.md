@@ -1,14 +1,3 @@
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 592e49e1106cdf0e39bf8e092141f12d_0ca0d680664911f1a99c5254007bceed
-    ReservedCode1: 5Hxz4IqYlF/E8+ndArh1KOVuIGmiOvc1dIlcfSep2QkYnE/o8ExXVpnD3cO6IoIgT4Gbn4OzA0wKOmCDlrRYfS6r7O2saa99PSFPgKmGckXDbKAOJQacmJSeqlze23m8Ijl7bPC4F2dyngE/y3VgtZr7GGOD7iRA34VeKgeEyb7ybn+qH9lrvWzX45s=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 592e49e1106cdf0e39bf8e092141f12d_0ca0d680664911f1a99c5254007bceed
-    ReservedCode2: 5Hxz4IqYlF/E8+ndArh1KOVuIGmiOvc1dIlcfSep2QkYnE/o8ExXVpnD3cO6IoIgT4Gbn4OzA0wKOmCDlrRYfS6r7O2saa99PSFPgKmGckXDbKAOJQacmJSeqlze23m8Ijl7bPC4F2dyngE/y3VgtZr7GGOD7iRA34VeKgeEyb7ybn+qH9lrvWzX45s=
----
-
 # Week 2 周报：股权结构抽取流水线 — 8家新公司
 
 **日期**：2026-06-05 ~ 2026-06-12  
@@ -72,4 +61,4 @@ AIGC:
 - PDF批注截图生成
 - 推GitHub更新网站
 - Week 3 新公司储备
-*（内容由AI生成，仅供参考）*
+

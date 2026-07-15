@@ -10,7 +10,7 @@ Week 3 Pipeline — 自动化提取与校验
   5. 输出未经手工修正的 auto_jsonl 到 week3/outputs/auto_jsonl/
 
 重要: 赛分科技 (688758) 在 auto 输出中保持原始错误（股而非万股），
-      以展示 pipeline 在不依赖手工修正时的局限性。
+      以展示处理管道在不依赖手工修正时的局限性。
 """
 
 import json
@@ -239,7 +239,7 @@ def write_auto_jsonl(records: list[dict], filepath: Path, source_info: str) -> N
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
 
-# ── Main pipeline ──
+# ── 主处理管道 ──
 def main():
     log("=" * 60)
     log("Week 3 Pipeline — 自动化提取与校验开始")
