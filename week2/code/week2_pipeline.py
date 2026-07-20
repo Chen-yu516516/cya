@@ -10,17 +10,21 @@ import os
 import sys
 from pathlib import Path
 from datetime import datetime
+from pathlib import Path
+SCRIPT_DIR = Path(__file__).resolve().parent  # week2/code/
+REPO_ROOT = SCRIPT_DIR.parent.parent  # cya repo root
+
 
 # ── 配置 ──────────────────────────────────────────────
 PDF_MAP = {
-    "001282": "/Users/chenyuang/Desktop/马威斯抓取巨潮网结果/2023/001282_三联锻造_2023-05-17.pdf",
-    "603418": "/Users/chenyuang/Desktop/抓取结果/MB002_友升股份/603418_友升股份_IPO招股说明书.pdf",
-    "301581": "/Users/chenyuang/Desktop/抓取结果/GEM001_黄山谷捷/301581_黄山谷捷_IPO招股说明书.pdf",
-    "301563": "/Users/chenyuang/Desktop/抓取结果/GEM002_云汉芯城/301563_云汉芯城_IPO招股说明书.pdf",
-    "688758": "/Users/chenyuang/Desktop/抓取结果/STAR001_赛分科技/688758_赛分科技_IPO招股说明书.pdf",
-    "688775": "/Users/chenyuang/Desktop/马威斯抓取巨潮网结果/2025/688775_影石创新_2025-06-06.pdf",
-    "920100": "/Users/chenyuang/Desktop/抓取结果/BSE001_三协电机/920100_三协电机_IPO招股说明书.pdf",
-    "920116": "/Users/chenyuang/Desktop/抓取结果/BSE002_星图测控/920116_星图测控_IPO招股说明书.pdf",
+    "001282": "REPO_ROOT / "001282_三联锻造_2023-05-17.pdf",
+    "603418": "REPO_ROOT / "603418_友升股份_IPO招股说明书.pdf",
+    "301581": "REPO_ROOT / "301581_黄山谷捷_IPO招股说明书.pdf",
+    "301563": "REPO_ROOT / "301563_云汉芯城_IPO招股说明书.pdf",
+    "688758": "REPO_ROOT / "688758_赛分科技_IPO招股说明书.pdf",
+    "688775": "REPO_ROOT / "688775_影石创新_2025-06-06.pdf",
+    "920100": "REPO_ROOT / "920100_三协电机_IPO招股说明书.pdf",
+    "920116": "REPO_ROOT / "920116_星图测控_IPO招股说明书.pdf",
 }
 
 COMPANY_NAMES = {

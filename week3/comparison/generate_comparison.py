@@ -15,7 +15,7 @@ except ImportError:
     os.system("python3 -m pip install openpyxl -q")
     import openpyxl
 
-WEEK3 = Path("/Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3")
+WEEK3 = Path(__file__).resolve().parent.parent  # week3/ directory
 GOLD_DIR = WEEK3 / "manual_gold"
 AUTO_DIR = WEEK3 / "auto_output" / "auto_excel"
 COMP_DIR = WEEK3 / "comparison"

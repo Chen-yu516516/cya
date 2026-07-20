@@ -157,6 +157,34 @@ Gold和Auto严格分离，不能混在同一个文件里，不能互相引用。
 - 流程要能复现 → 对应第三步提供完整处理代码
 - 失败要能定位和返工 → 对应第五步逐条归因
 
+---
+
+## 四阶段产出体系 (raw → parsed → validated → reviewed)
+
+> 教授第四条修改意见（2026-07-17）要求建立分阶段产出体系，明确标注人工修改位置。
+
+### 四阶段概览
+
+| 阶段 | 目录 | 内容 | 人工介入 |
+|------|------|------|----------|
+| **raw** | `pipeline/stages/raw/` | Markdown 章节定位 + 正则提取的直接输出，保留原文数值 | 否 |
+| **parsed** | `pipeline/stages/parsed/` | 类型转换、单位归一化、字段映射后的结构化数据 | 否 |
+| **validated** | `pipeline/stages/validated/` | schema 校验 + cross-check 标记（每条有 validation_status） | 否 |
+| **reviewed** | `pipeline/stages/reviewed/` | 人工对照 PDF 逐条核实的最终 Gold 数据 | **是** |
+
+**人工修改全部集中在 reviewed 阶段**，每条修改保留 `original_value` / `revised_value` / `reason` / `pdf_page` 四列。
+
+详细说明见 [pipeline/stages/README.md](week3/pipeline/stages/README.md)。
+
+### 提交要求对齐
+
+| 第六周要求 | 对应四阶段 |
+|------------|-----------|
+| `manual_gold/` | **reviewed** — 人工对照 PDF 逐条核实的 Gold Excel |
+| `auto_output/` | **raw + parsed** — 未经人工修改的自动提取和结构解析 |
+| `final/` | **reviewed** — 人工及组内复核后的最终数据 |
+| `validation/` | **validated** — schema、cross-check、逐字段对比 |
+
 ## Week 1 公共样本最小闭环提交
 
 > 提交时间: 2026-06-07 | 状态: ✅ 完成

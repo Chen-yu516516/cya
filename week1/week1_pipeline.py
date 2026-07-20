@@ -13,9 +13,9 @@ import sys
 from datetime import datetime
 
 # ============ 配置 ============
-WORK_DIR = "/Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3"
-OUTPUT_DIR = os.path.join(WORK_DIR, "output/week1")
-TEMP_DIR = os.path.join(WORK_DIR, "temp")
+WORK_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUTPUT_DIR = os.path.join(WORK_DIR, "week1", "output")
+TEMP_DIR = os.path.join(WORK_DIR, "..", "temp")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Week 1 公共样本：8家公司，覆盖全部板块（科创板、创业板、沪主板、深主板、北交所）
@@ -34,7 +34,7 @@ COMPANY_LIST = [
         "prospectus_url": "",
         "prospectus_version": "申报稿",
         "prospectus_date": "2025-11-03",
-        "prospectus_path": "/Users/chenyuang/Desktop/马威斯抓取巨潮网结果/2025/920091_大鹏工业_2025-11-03.pdf",
+        "prospectus_path": os.path.join(WORK_DIR, "data", "prospectus", r"920091_大鹏工业_2025-11-03.pdf"),
     },
     {
         "sample_id": "BSE002",
@@ -50,7 +50,7 @@ COMPANY_LIST = [
         "prospectus_url": "",
         "prospectus_version": "申报稿",
         "prospectus_date": "2024-08-09",
-        "prospectus_path": "/Users/chenyuang/Desktop/马威斯抓取巨潮网结果/2024/920118_太湖远大_2024-08-09.pdf",
+        "prospectus_path": os.path.join(WORK_DIR, "data", "prospectus", r"920118_太湖远大_2024-08-09.pdf"),
     },
     {
         "sample_id": "STAR001",
@@ -66,7 +66,7 @@ COMPANY_LIST = [
         "prospectus_url": "",
         "prospectus_version": "注册稿",
         "prospectus_date": "2022-12-27",
-        "prospectus_path": "/Users/chenyuang/Desktop/抓取结果/佰维存储_688525_2022-12-27_佰维存储首次公开发行股票并在科创板上市招股说明书.pdf",
+        "prospectus_path": os.path.join(WORK_DIR, "data", "prospectus", r"佰维存储_688525_2022-12-27_佰维存储首次公开发行股票并在科创板上市招股说明书.pdf"),
     },
     {
         "sample_id": "STAR002",
@@ -82,7 +82,7 @@ COMPANY_LIST = [
         "prospectus_url": "",
         "prospectus_version": "注册稿",
         "prospectus_date": "2022-12-30",
-        "prospectus_path": "/Users/chenyuang/Desktop/抓取结果/百利天恒_688506_2022-12-30_百利天恒首次公开发行股票并在科创板上市招股说明书.pdf",
+        "prospectus_path": os.path.join(WORK_DIR, "data", "prospectus", r"百利天恒_688506_2022-12-30_百利天恒首次公开发行股票并在科创板上市招股说明书.pdf"),
     },
     {
         "sample_id": "GEM001",
@@ -98,7 +98,7 @@ COMPANY_LIST = [
         "prospectus_url": "",
         "prospectus_version": "注册稿",
         "prospectus_date": "2022-12-27",
-        "prospectus_path": "/Users/chenyuang/Desktop/抓取结果/富乐德_301297_2022-12-27_首次公开发行股票并在创业板上市招股说明书.pdf",
+        "prospectus_path": os.path.join(WORK_DIR, "data", "prospectus", r"富乐德_301297_2022-12-27_首次公开发行股票并在创业板上市招股说明书.pdf"),
     },
     {
         "sample_id": "GEM002",
@@ -114,7 +114,7 @@ COMPANY_LIST = [
         "prospectus_url": "",
         "prospectus_version": "注册稿",
         "prospectus_date": "2022-09-01",
-        "prospectus_path": "/Users/chenyuang/Desktop/马威斯抓取巨潮网结果/2022/301328_维峰电子_2022-09-01.pdf",
+        "prospectus_path": os.path.join(WORK_DIR, "data", "prospectus", r"301328_维峰电子_2022-09-01.pdf"),
     },
     {
         "sample_id": "MAIN001",
@@ -130,7 +130,7 @@ COMPANY_LIST = [
         "prospectus_url": "",
         "prospectus_version": "申报稿",
         "prospectus_date": "2022-12-23",
-        "prospectus_path": "/Users/chenyuang/Desktop/抓取结果/信达证券_601059_2022-12-23_信达证券首次公开发行股票招股说明书摘要.pdf",
+        "prospectus_path": os.path.join(WORK_DIR, "data", "prospectus", r"信达证券_601059_2022-12-23_信达证券首次公开发行股票招股说明书摘要.pdf"),
     },
     {
         "sample_id": "MAIN002",
@@ -146,7 +146,7 @@ COMPANY_LIST = [
         "prospectus_url": "",
         "prospectus_version": "申报稿",
         "prospectus_date": "2022-06-13",
-        "prospectus_path": "/Users/chenyuang/Desktop/马威斯抓取巨潮网结果/2022/001323_慕思股份_2022-06-13.pdf",
+        "prospectus_path": os.path.join(WORK_DIR, "data", "prospectus", r"001323_慕思股份_2022-06-13.pdf"),
     },
 ]
 
