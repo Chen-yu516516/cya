@@ -41,7 +41,7 @@ pipeline/stages/
 ### 2.1 Raw — 原始提取
 
 - **输入**: Markdown 格式的招股书文本
-- **处理**: 章节定位（正则匹配"历史沿革"/"股本和股东变化"）+ 事件提取（table regex + LLM）
+- **处理**: 章节定位（正则匹配"历史沿革"/"股本和股东变化"）+ 事件提取（table regex + 大语言模型）
 - **输出**: JSONL，每条记录包含 `record_type`、`stock_code`、原始数值、`evidence_text`（原文摘录）
 - **特点**: 保留所有原始值和文本——包括赛分科技的单位错误（`subscription_shares_wan` 填入的是"股"而非"万股"）
 - **标记**: 每条记录带 `_stage: "raw"` 和 `_source: "Markdown 章节定位 + 正则提取"`

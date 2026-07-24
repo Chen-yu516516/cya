@@ -1,13 +1,3 @@
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 592e49e1106cdf0e39bf8e092141f12d_4b718f87819f11f1b625525400e6dd8f
-    ReservedCode1: voxEajhLc8G0lfv/sXEQfVui+85NEh5hP3bxVMiqOc8lC1sg/+/+CPslB/C90xnLqddT0PPA/wbO1PeIa56IzXzSuOSiytp14T+o54nBWtJQlreXwXWgomM4JkWzShrfc9qIYNh7SZh8KnEaEwjuYraM3Lru48dGG1iZV2QJnrbzcezuIQ1B2EQRWDQ=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 592e49e1106cdf0e39bf8e092141f12d_4b718f87819f11f1b625525400e6dd8f
-    ReservedCode2: voxEajhLc8G0lfv/sXEQfVui+85NEh5hP3bxVMiqOc8lC1sg/+/+CPslB/C90xnLqddT0PPA/wbO1PeIa56IzXzSuOSiytp14T+o54nBWtJQlreXwXWgomM4JkWzShrfc9qIYNh7SZh8KnEaEwjuYraM3Lru48dGG1iZV2QJnrbzcezuIQ1B2EQRWDQ=
----
 
 # Week 3 工作周报：IPO 招股书股权结构抽取——Gold Standard 重建与自动化流程验证
 
@@ -67,7 +57,7 @@ Week 2 阶段的核心缺陷在于自动化仅产出两个 Sheet（认缴流量�
 | 4 | 认缴流量条目数量严重不足（如赛分科技仅 4 条 vs 实际约 23 条） | 增资事件识别存在大量遗漏 | 在 Gold Standard 中逐页穷举，反向推动自动化改进 |
 | 5 | comparison 只有 match/mismatch/missing 三状态，缺乏归因维度 | 对比评估粒度过粗 | 引入 mismatch_reason 和 missing_reason 归因分类，建立字段级对比 |
 | 6 | Gold 和自动化必须走两路，不能混合 | 整体架构缺陷 | 建立三层目录结构：manual_gold / auto_output / comparison，物理隔离 |
-| 7 | 文档中存在大量 AI 相关元数据和术语 | 痕迹清理 | 全面清除 AIGC 元数据块，替换敏感词汇 |
+| 7 | 文档中存在大量 AI 相关元数据和术语 | 痕迹清理 | 全面清除自动生成元数据块，替换敏感词汇 |
 
 教师反馈的核心精神可概括为：**Gold Standard 必须是独立于任何自动化系统的、从原始文档人工构建的标准答案**。这一原则直接决定了 Week 3 的"推倒重建"方案。
 
@@ -579,5 +569,3 @@ cya/
 
 ### C. PR 链接
 
-https://github.com/Chen-yu516516/cya/compare/main...week3-submission
-*（内容由AI生成，仅供参考）*
