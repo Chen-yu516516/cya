@@ -7,7 +7,7 @@
 set -e
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 WEEK3_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-STAGES_DIR="$SCRIPT_DIR/stages"
+STAGES_DIR="$WEEK3_DIR/week3/pipeline/stages"
 
 echo "========================================="
 echo " Week 3 Pipeline — 统一运行"
@@ -17,7 +17,7 @@ echo "========================================="
 # ── 阶段 1: raw → auto_output ──
 echo ""
 echo "[阶段 1/4] 运行 week3_pipeline.py (raw → auto_output)"
-cd "$SCRIPT_DIR"
+cd "$WEEK3_DIR/week3/pipeline"
 python3 week3_pipeline.py
 
 # ── 阶段 2: raw → parsed ──
@@ -29,7 +29,7 @@ python3 migrate_stages.py
 # ── 阶段 3: parsed → validated ──
 echo ""
 echo "[阶段 3/4] 运行 cross-check (per_event + per_shareholder)"
-cd "$WEEK3_DIR/validation/cross_check"
+cd "$WEEK3_DIR/week3/validation/cross_check"
 python3 per_event_check.py
 python3 per_shareholder_check.py
 
