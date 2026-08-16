@@ -1,0 +1,17 @@
+===== 赛分科技 unit 修复日志 =====
+执行时间: 2026-06-18T18:37:26.281166
+
+  [源峰磐赛] subscription_shares_wan: 1571815.0 -> 157.1815
+  [珠海峦恒] subscription_shares_wan: 628726.0 -> 62.8726
+  [高瓴祈睿] subscription_shares_wan: 628726.0 -> 62.8726
+  [国药中生] subscription_shares_wan: 461846.0 -> 46.1846
+  [圣成投资] subscription_shares_wan: 9699.0 -> 0.9699
+  [国药二期] subscription_shares_wan: 155625.0 -> 15.5625
+  [圣祁投资] subscription_shares_wan: 1556.0 -> 0.1556
+  [夏尔巴二期] subscription_shares_wan: 392954.0 -> 39.2954
+  [甘李药业] subscription_shares_wan: 235772.0 -> 23.5772
+  [吴征涛] subscription_shares_wan: 157182.0 -> 15.7182
+
+共修复 10 条 subscription_flow 记录
+修复标准: subscription_shares_wan 除以 10000 (股 -> 万股)
+判断依据: evidence_text 原文写明'1,571,815 股'等以股为单位的数据

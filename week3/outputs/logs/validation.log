@@ -1,0 +1,111 @@
+[2026-06-18 18:42:14] ============================================================
+[2026-06-18 18:42:14] Week 3 Pipeline — 自动化提取与校验开始
+[2026-06-18 18:42:14] 执行时间: 2026-06-18T18:42:14.692588
+[2026-06-18 18:42:14] ============================================================
+[2026-06-18 18:42:14] 
+[2026-06-18 18:42:14] 处理: 001282 三联锻造
+[2026-06-18 18:42:14]   数据源: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/data/001282_三联锻造.jsonl
+[2026-06-18 18:42:14]   读取记录: 36 条
+[2026-06-18 18:42:14]   认缴流量: 13 条 | 股权存量: 23 条
+[2026-06-18 18:42:14]   生成 Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_excel/001282_三联锻造_auto.xlsx
+[2026-06-18 18:42:14]   生成 auto_jsonl: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_jsonl/001282_三联锻造_auto.jsonl (共 36 条)
+[2026-06-18 18:42:14] 
+[2026-06-18 18:42:14] 处理: 301563 云汉芯城
+[2026-06-18 18:42:14]   数据源: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/data/301563_云汉芯城.jsonl
+[2026-06-18 18:42:14]   读取记录: 164 条
+[2026-06-18 18:42:14]   认缴流量: 35 条 | 股权存量: 129 条
+[2026-06-18 18:42:14]   [301563 云汉芯城#4] subscription_flow 缺少必填字段: subscription_amount_wan
+[2026-06-18 18:42:14]   [301563 云汉芯城#5] subscription_flow 缺少必填字段: subscription_amount_wan
+[2026-06-18 18:42:14]   [301563 云汉芯城#6] subscription_flow 缺少必填字段: subscription_amount_wan
+[2026-06-18 18:42:14]   [301563 云汉芯城#7] subscription_flow 缺少必填字段: subscription_amount_wan
+[2026-06-18 18:42:14]   [301563 云汉芯城#8] subscription_flow 缺少必填字段: subscription_amount_wan
+[2026-06-18 18:42:14]   [301563 云汉芯城#9] subscription_flow 缺少必填字段: subscription_amount_wan
+[2026-06-18 18:42:14]   [301563 云汉芯城#16] subscription_flow 缺少必填字段: subscription_amount_wan
+[2026-06-18 18:42:14]   [301563 云汉芯城#18] subscription_flow 缺少必填字段: subscription_amount_wan
+[2026-06-18 18:42:14]   [301563 云汉芯城#19] subscription_flow 缺少必填字段: subscription_amount_wan
+[2026-06-18 18:42:14]   [301563 云汉芯城#20] subscription_flow 缺少必填字段: subscription_amount_wan
+[2026-06-18 18:42:14]   [301563 云汉芯城#21] subscription_flow 缺少必填字段: subscription_amount_wan
+[2026-06-18 18:42:14]   生成 Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_excel/301563_云汉芯城_auto.xlsx
+[2026-06-18 18:42:14]   生成 auto_jsonl: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_jsonl/301563_云汉芯城_auto.jsonl (共 164 条)
+[2026-06-18 18:42:14] 
+[2026-06-18 18:42:14] 处理: 301581 黄山谷捷
+[2026-06-18 18:42:14]   数据源: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/data/301581_黄山谷捷.jsonl
+[2026-06-18 18:42:14]   读取记录: 24 条
+[2026-06-18 18:42:14]   认缴流量: 3 条 | 股权存量: 21 条
+[2026-06-18 18:42:14]   [301581 黄山谷捷#0] subscription_flow 缺少必填字段: subscription_amount_wan
+[2026-06-18 18:42:14]   [301581 黄山谷捷#1] subscription_flow 缺少必填字段: subscription_amount_wan
+[2026-06-18 18:42:14]   [301581 黄山谷捷#3] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#4] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#5] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#6] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#7] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#8] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#9] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#10] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#11] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#12] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#13] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#14] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#15] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#16] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#17] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#18] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#19] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#20] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#21] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#22] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   [301581 黄山谷捷#23] shareholding_ratio 类型错误: 期望数值，实际 str
+[2026-06-18 18:42:14]   生成 Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_excel/301581_黄山谷捷_auto.xlsx
+[2026-06-18 18:42:14]   生成 auto_jsonl: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_jsonl/301581_黄山谷捷_auto.jsonl (共 24 条)
+[2026-06-18 18:42:14] 
+[2026-06-18 18:42:14] 处理: 603418 友升股份
+[2026-06-18 18:42:14]   数据源: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/data/603418_友升股份.jsonl
+[2026-06-18 18:42:14]   读取记录: 45 条
+[2026-06-18 18:42:14]   认缴流量: 13 条 | 股权存量: 32 条
+[2026-06-18 18:42:14]   生成 Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_excel/603418_友升股份_auto.xlsx
+[2026-06-18 18:42:14]   生成 auto_jsonl: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_jsonl/603418_友升股份_auto.jsonl (共 45 条)
+[2026-06-18 18:42:14] 
+[2026-06-18 18:42:14] 处理: 688758 赛分科技
+[2026-06-18 18:42:14]   数据源: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/data/688758_赛分科技.jsonl
+[2026-06-18 18:42:14]   读取记录: 326 条
+[2026-06-18 18:42:14]   认缴流量: 10 条 | 股权存量: 316 条
+[2026-06-18 18:42:14]   [688758 赛分科技#0] [WARN] subscription_shares_wan 值异常大 (1571815.0)，疑似单位为股而非万股
+[2026-06-18 18:42:14]   [688758 赛分科技#1] [WARN] subscription_shares_wan 值异常大 (628726.0)，疑似单位为股而非万股
+[2026-06-18 18:42:14]   [688758 赛分科技#2] [WARN] subscription_shares_wan 值异常大 (628726.0)，疑似单位为股而非万股
+[2026-06-18 18:42:14]   [688758 赛分科技#3] [WARN] subscription_shares_wan 值异常大 (461846.0)，疑似单位为股而非万股
+[2026-06-18 18:42:14]   [688758 赛分科技#5] [WARN] subscription_shares_wan 值异常大 (155625.0)，疑似单位为股而非万股
+[2026-06-18 18:42:14]   [688758 赛分科技#7] [WARN] subscription_shares_wan 值异常大 (392954.0)，疑似单位为股而非万股
+[2026-06-18 18:42:14]   [688758 赛分科技#8] [WARN] subscription_shares_wan 值异常大 (235772.0)，疑似单位为股而非万股
+[2026-06-18 18:42:14]   [688758 赛分科技#9] [WARN] subscription_shares_wan 值异常大 (157182.0)，疑似单位为股而非万股
+[2026-06-18 18:42:14]   生成 Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_excel/688758_赛分科技_auto.xlsx
+[2026-06-18 18:42:14]   生成 auto_jsonl: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_jsonl/688758_赛分科技_auto.jsonl (共 326 条)
+[2026-06-18 18:42:14] 
+[2026-06-18 18:42:14] 处理: 688775 影石创新
+[2026-06-18 18:42:14]   数据源: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/data/688775_影石创新.jsonl
+[2026-06-18 18:42:14]   读取记录: 81 条
+[2026-06-18 18:42:14]   认缴流量: 0 条 | 股权存量: 81 条
+[2026-06-18 18:42:14]   生成 Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_excel/688775_影石创新_auto.xlsx
+[2026-06-18 18:42:14]   生成 auto_jsonl: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_jsonl/688775_影石创新_auto.jsonl (共 81 条)
+[2026-06-18 18:42:14] 
+[2026-06-18 18:42:14] 处理: 920100 三协电机
+[2026-06-18 18:42:14]   数据源: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/data/920100_三协电机.jsonl
+[2026-06-18 18:42:14]   读取记录: 36 条
+[2026-06-18 18:42:14]   认缴流量: 17 条 | 股权存量: 19 条
+[2026-06-18 18:42:14]   生成 Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_excel/920100_三协电机_auto.xlsx
+[2026-06-18 18:42:14]   生成 auto_jsonl: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_jsonl/920100_三协电机_auto.jsonl (共 36 条)
+[2026-06-18 18:42:14] 
+[2026-06-18 18:42:14] 处理: 920116 星图测控
+[2026-06-18 18:42:14]   数据源: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/data/920116_星图测控.jsonl
+[2026-06-18 18:42:14]   读取记录: 19 条
+[2026-06-18 18:42:14]   认缴流量: 6 条 | 股权存量: 13 条
+[2026-06-18 18:42:14]   生成 Excel: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_excel/920116_星图测控_auto.xlsx
+[2026-06-18 18:42:14]   生成 auto_jsonl: /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_jsonl/920116_星图测控_auto.jsonl (共 19 条)
+[2026-06-18 18:42:14] 
+[2026-06-18 18:42:14] ============================================================
+[2026-06-18 18:42:14] Pipeline 执行完毕 — 汇总
+[2026-06-18 18:42:14]   总记录数: 731
+[2026-06-18 18:42:14]   认缴流量: 97 | 股权存量: 634
+[2026-06-18 18:42:14]   Schema 错误: 34 | 警告: 8
+[2026-06-18 18:42:14]   生成 Excel: 8 份 -> /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_excel
+[2026-06-18 18:42:14]   生成 auto_jsonl: 8 份 -> /Users/chenyuang/Library/Application Support/com.tencent.mac.marvis/MarvisData/User/oAN1i2dK-PWdQG0K0G95clCfK3pg/workspace/conv_19e9bfeabd9_078488edb7a3/output/cya/week3/outputs/auto_jsonl
+[2026-06-18 18:42:14] ============================================================

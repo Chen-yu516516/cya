@@ -1,0 +1,104 @@
+{
+  "pipeline_version": "week3-四阶段",
+  "generated_at": "2026-07-20",
+  "companies": [
+    [
+      "001282",
+      "三联锻造"
+    ],
+    [
+      "301563",
+      "云汉芯城"
+    ],
+    [
+      "301581",
+      "黄山谷捷"
+    ],
+    [
+      "603418",
+      "友升股份"
+    ],
+    [
+      "688758",
+      "赛分科技"
+    ],
+    [
+      "688775",
+      "影石创新"
+    ],
+    [
+      "920100",
+      "三协电机"
+    ],
+    [
+      "920116",
+      "星图测控"
+    ]
+  ],
+  "stages": {
+    "raw": {
+      "path": "pipeline/stages/raw/",
+      "file_count": 8,
+      "files": [
+        "001282_三联锻造_raw.jsonl",
+        "301563_云汉芯城_raw.jsonl",
+        "301581_黄山谷捷_raw.jsonl",
+        "603418_友升股份_raw.jsonl",
+        "688758_赛分科技_raw.jsonl",
+        "688775_影石创新_raw.jsonl",
+        "920100_三协电机_raw.jsonl",
+        "920116_星图测控_raw.jsonl"
+      ]
+    },
+    "parsed": {
+      "path": "pipeline/stages/parsed/",
+      "file_count": 8,
+      "files": [
+        "001282_三联锻造_parsed.jsonl",
+        "301563_云汉芯城_parsed.jsonl",
+        "301581_黄山谷捷_parsed.jsonl",
+        "603418_友升股份_parsed.jsonl",
+        "688758_赛分科技_parsed.jsonl",
+        "688775_影石创新_parsed.jsonl",
+        "920100_三协电机_parsed.jsonl",
+        "920116_星图测控_parsed.jsonl"
+      ]
+    },
+    "validated": {
+      "path": "pipeline/stages/validated/",
+      "file_count": 8,
+      "files": [
+        "001282_三联锻造_validated.jsonl",
+        "301563_云汉芯城_validated.jsonl",
+        "301581_黄山谷捷_validated.jsonl",
+        "603418_友升股份_validated.jsonl",
+        "688758_赛分科技_validated.jsonl",
+        "688775_影石创新_validated.jsonl",
+        "920100_三协电机_validated.jsonl",
+        "920116_星图测控_validated.jsonl"
+      ]
+    },
+    "reviewed": {
+      "path": "pipeline/stages/reviewed/",
+      "file_count": 16,
+      "files": [
+        "001282_三联锻造_reviewed.txt",
+        "001282_三联锻造_reviewed.xlsx",
+        "301563_云汉芯城_reviewed.txt",
+        "301563_云汉芯城_reviewed.xlsx",
+        "301581_黄山谷捷_reviewed.txt",
+        "301581_黄山谷捷_reviewed.xlsx",
+        "603418_友升股份_reviewed.txt",
+        "603418_友升股份_reviewed.xlsx",
+        "688758_赛分科技_reviewed.txt",
+        "688758_赛分科技_reviewed.xlsx",
+        "688775_影石创新_reviewed.txt",
+        "688775_影石创新_reviewed.xlsx",
+        "920100_三协电机_reviewed.txt",
+        "920100_三协电机_reviewed.xlsx",
+        "920116_星图测控_reviewed.txt",
+        "920116_星图测控_reviewed.xlsx"
+      ]
+    }
+  }
+}

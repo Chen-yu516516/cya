@@ -1,0 +1,9 @@
+stock_code,company_name,subscription_flow_count,equity_snapshot_count,total_records,has_records,has_t0
+001282,三联锻造,0,122,122,True,True
+603418,友升股份,38,354,392,True,True
+301581,黄山谷捷,0,82,82,True,True
+301563,云汉芯城,0,120,120,True,True
+688758,赛分科技,10,316,326,True,True
+688775,影石创新,0,0,0,False,False
+920100,三协电机,0,50,50,True,True
+920116,星图测控,3,85,88,True,True

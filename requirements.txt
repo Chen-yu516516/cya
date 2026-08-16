@@ -1,0 +1,11 @@
+# Python 依赖版本
+# 项目: cya — 招股书 PE/VC 融资信息自动化提取
+# 日期: 2026-07-24
+
+openpyxl>=3.1.0          # Excel 读写，xlsx 生成与格式化
+pandas>=2.0.0            # 数据分析、CSV 对比处理
+numpy>=1.24.0            # 数值计算
+pydantic>=2.0.0          # Schema 定义与校验（extraction_models.py）
+
+# 以下为标准库，无需安装
+# json, pathlib, re, os, sys, datetime, csv, typing, hashlib, itertools, collections
