@@ -17,14 +17,14 @@ REPO_ROOT = SCRIPT_DIR.parent.parent  # cya repo root
 
 # ── 配置 ──────────────────────────────────────────────
 PDF_MAP = {
-    "001282": "REPO_ROOT / "001282_三联锻造_2023-05-17.pdf",
-    "603418": "REPO_ROOT / "603418_友升股份_IPO招股说明书.pdf",
-    "301581": "REPO_ROOT / "301581_黄山谷捷_IPO招股说明书.pdf",
-    "301563": "REPO_ROOT / "301563_云汉芯城_IPO招股说明书.pdf",
-    "688758": "REPO_ROOT / "688758_赛分科技_IPO招股说明书.pdf",
-    "688775": "REPO_ROOT / "688775_影石创新_2025-06-06.pdf",
-    "920100": "REPO_ROOT / "920100_三协电机_IPO招股说明书.pdf",
-    "920116": "REPO_ROOT / "920116_星图测控_IPO招股说明书.pdf",
+    "001282": str(REPO_ROOT / "001282_三联锻造_2023-05-17.pdf"),
+    "603418": str(REPO_ROOT / "603418_友升股份_IPO招股说明书.pdf"),
+    "301581": str(REPO_ROOT / "301581_黄山谷捷_IPO招股说明书.pdf"),
+    "301563": str(REPO_ROOT / "301563_云汉芯城_IPO招股说明书.pdf"),
+    "688758": str(REPO_ROOT / "688758_赛分科技_IPO招股说明书.pdf"),
+    "688775": str(REPO_ROOT / "688775_影石创新_2025-06-06.pdf"),
+    "920100": str(REPO_ROOT / "920100_三协电机_IPO招股说明书.pdf"),
+    "920116": str(REPO_ROOT / "920116_星图测控_IPO招股说明书.pdf"),
 }
 
 COMPANY_NAMES = {
