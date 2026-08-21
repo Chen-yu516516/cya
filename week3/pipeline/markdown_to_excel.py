@@ -17,6 +17,7 @@ Week 3 自动化 Pipeline — 从招股书 Markdown 到 4-Sheet Excel
 import json
 import os
 import re
+import subprocess
 import sys
 from pathlib import Path
 from datetime import datetime
@@ -27,7 +28,7 @@ try:
     import openpyxl
     from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
 except ImportError:
-    os.system(f"{sys.executable} -m pip install openpyxl -q")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "openpyxl", "-q"])
     import openpyxl
     from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
 

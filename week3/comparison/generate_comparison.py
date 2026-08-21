@@ -7,12 +7,14 @@ Week 3 对比分析 — 手动 Gold 标准 vs 自动化产出
 
 import csv
 import os
+import subprocess
+import sys
 from pathlib import Path
 
 try:
     import openpyxl
 except ImportError:
-    os.system("python3 -m pip install openpyxl -q")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "openpyxl", "-q"])
     import openpyxl
 
 WEEK3 = Path(__file__).resolve().parent.parent  # week3/ directory

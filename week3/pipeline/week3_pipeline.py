@@ -15,6 +15,7 @@ Week 3 Pipeline — 自动化提取与校验
 
 import json
 import os
+import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -25,7 +26,7 @@ try:
     from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
 except ImportError:
     print("openpyxl not found, installing...")
-    os.system(f"{sys.executable} -m pip install openpyxl -q")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "openpyxl", "-q"])
     import openpyxl
     from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
 
